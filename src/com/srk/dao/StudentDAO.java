@@ -97,9 +97,9 @@ public class StudentDAO {
             if(rs.next()){  
             	student.setStudentId(rs.getInt(1));
                 student.setStudentName(rs.getString(2));
-                student.setStudentGender(rs)
-            	student.setStudentAddr(rs.getString(3));
-            	student.setAge(rs.getString(4));
+                student.setStudentGender(rs.getString(3))
+            	student.setStudentAddr(rs.getString(4));
+            	student.setAge(rs.getString(5));
             	student.setQualification(rs.getString(5));
             	student.setPercentage(rs.getString(6));
             	student.setYearPassed(rs.getString(7));
