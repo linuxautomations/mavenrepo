@@ -22,7 +22,8 @@ public class SaveEditedStudent extends HttpServlet{
 	          
 	        String sid=request.getParameter("stdId");  
 	        int studentId=Integer.parseInt(sid);  
-	        String studentName = request.getParameter("stdname");  
+					String studentName = request.getParameter("stdname"); 
+					String studentName = request.getParameter("stdname"); 
 	        String studentAddrs = request.getParameter("stdaddrs");  
 	        String studentAge = request.getParameter("stdage");  
 	        String studentQual = request.getParameter("stdqual");  
