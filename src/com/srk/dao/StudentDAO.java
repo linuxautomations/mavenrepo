@@ -36,7 +36,7 @@ public class StudentDAO {
         int status=0;  
         try{  
             Connection con=StudentDAO.getConnection();  
-            PreparedStatement ps=con.prepareStatement("insert into Students(student_name,student_addr,student_age,student_qual,student_percent,student_year_passed) values (?,?,?,?,?,?)");  
+            PreparedStatement ps=con.prepareStatement("insert into Students(student_name,student_gender,student_addr,student_age,student_qual,student_percent,student_year_passed) values (?,?,?,?,?,?)");  
             ps.setString(1,std.getStudentName());  
             ps.setString(2,std.getStudentAddr());  
             ps.setString(3,std.getAge());  
