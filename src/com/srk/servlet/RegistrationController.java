@@ -29,7 +29,7 @@ public class RegistrationController extends HttpServlet {
 		{
 			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 			out.println("<font color=red>Please fill all the fields</font>");
-			out.println();
+			out.println(gender);
 
 			rd.include(request, response);
 		}
