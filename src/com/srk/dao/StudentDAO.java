@@ -56,8 +56,9 @@ public class StudentDAO {
         int status=0;  
         try{  
             Connection con=StudentDAO.getConnection();  
-            PreparedStatement ps=con.prepareStatement("update Students set student_name=?,student_genderstudent_addr=?,student_age=?,student_qual=?,student_percent=?,student_year_passed=? where student_id=?");  
-            ps.setString(1,std.getStudentName());  
+            PreparedStatement ps=con.prepareStatement("update Students set student_name=?,student_gender=?,student_addr=?,student_age=?,student_qual=?,student_percent=?,student_year_passed=? where student_id=?");  
+            ps.setString(1,std.getStudentName());
+            ps  
             ps.setString(2,std.getStudentAddr());  
             ps.setString(3,std.getAge());  
             ps.setString(4,std.getQualification());  
