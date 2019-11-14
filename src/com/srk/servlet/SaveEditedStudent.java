@@ -33,7 +33,7 @@ public class SaveEditedStudent extends HttpServlet{
 	        Student  student = new Student();  
 	        student.setStudentId(studentId); 
 					student.setStudentName(studentName);
-					student.setStudentName(studentName);
+					student.setStudentGender(studentGender);
         	student.setStudentAddr(studentAddrs);
         	student.setAge(studentAge);
         	student.setQualification(studentQual);
