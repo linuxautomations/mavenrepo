@@ -96,7 +96,8 @@ public class StudentDAO {
             ResultSet rs=ps.executeQuery();  
             if(rs.next()){  
             	student.setStudentId(rs.getInt(1));
-            	student.setStudentName(rs.getString(2));
+                student.setStudentName(rs.getString(2));
+                student
             	student.setStudentAddr(rs.getString(3));
             	student.setAge(rs.getString(4));
             	student.setQualification(rs.getString(5));
