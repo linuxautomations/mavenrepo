@@ -20,11 +20,12 @@ public class RegistrationController extends HttpServlet {
 		PrintWriter out = response.getWriter();
 		String name = request.getParameter("fullname");
 		String Addr = request.getParameter("address");
+		String gender = request.getParameter("gender");
 		String age = request.getParameter("age");
 		String Qual = request.getParameter("qual");
 		String Persent = request.getParameter("percent");
 		String Year = request.getParameter("yop");
-		if(name.isEmpty()||Addr.isEmpty()||age.isEmpty()||Qual.isEmpty()||Persent.isEmpty()||Year.isEmpty())
+		if(name.isEmpty()||gender.isEmpty()||Addr.isEmpty()||age.isEmpty()||Qual.isEmpty()||Persent.isEmpty()||Year.isEmpty())
 		{
 			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 			out.println("<font color=red>Please fill all the fields</font>");
@@ -34,6 +35,7 @@ public class RegistrationController extends HttpServlet {
 		{
 			Student student = new Student();
 			student.setStudentName(name);
+			student.setStudentGender(gender);
         	student.setStudentAddr(Addr);
         	student.setAge(age);
         	student.setQualification(Qual);

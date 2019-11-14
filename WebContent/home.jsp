@@ -14,6 +14,7 @@ table#nat{
 </head>
 <body>  
 <% String name =  request.getParameter("fullname");
+  String gender = request.getParameter("gender");
 	String Addr = request.getParameter("address");
 	String age = request.getParameter("age");
 	String Qual = request.getParameter("qual");
@@ -23,6 +24,10 @@ table#nat{
 <tr>
 	<td>Full Name</td>
 	<td><%= name %></td>
+</tr>
+<tr>
+	<td>Gender</td>
+	<td><%= gender %></td>
 </tr>
 <tr>
 	<td>Address</td>

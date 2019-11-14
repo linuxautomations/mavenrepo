@@ -8,6 +8,7 @@ public class Student {
 	private String qualification;
 	private String percentage;
 	private String yearPassed;
+	private String studentGender;
 	
 	public Student(){}
 
@@ -25,6 +26,14 @@ public class Student {
 
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
+	}
+
+	public String getStudentGender() {
+		return studentGender;
+	}
+
+	public void setStudentGender(String studentGender) {
+		this.studentGender = studentGender;
 	}
 
 	public String getStudentAddr() {
