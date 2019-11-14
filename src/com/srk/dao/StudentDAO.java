@@ -58,8 +58,8 @@ public class StudentDAO {
             Connection con=StudentDAO.getConnection();  
             PreparedStatement ps=con.prepareStatement("update Students set student_name=?,student_gender=?,student_addr=?,student_age=?,student_qual=?,student_percent=?,student_year_passed=? where student_id=?");  
             ps.setString(1,std.getStudentName());
-            ps.setString(2,std.getSt)  
-            ps.setString(2,std.getStudentAddr());  
+            ps.setString(2,std.getStudentGender());  
+            ps.setString(3,std.getStudentAddr());  
             ps.setString(3,std.getAge());  
             ps.setString(4,std.getQualification());  
             ps.setString(5,std.getPercentage());  
