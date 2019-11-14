@@ -60,10 +60,10 @@ public class StudentDAO {
             ps.setString(1,std.getStudentName());
             ps.setString(2,std.getStudentGender());  
             ps.setString(3,std.getStudentAddr());  
-            ps.setString(3,std.getAge());  
-            ps.setString(4,std.getQualification());  
-            ps.setString(5,std.getPercentage());  
-            ps.setString(6,std.getYearPassed());
+            ps.setString(4,std.getAge());  
+            ps.setString(5,std.getQualification());  
+            ps.setString(6,std.getPercentage());  
+            ps.setString(7,std.getYearPassed());
             ps.setInt(7, std.getStudentId());
               
             status=ps.executeUpdate();  
