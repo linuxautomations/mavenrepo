@@ -120,7 +120,7 @@ public class StudentDAO {
             while(rs.next()){  
             	Student student=new Student();  
                 student.setStudentId(rs.getInt(1));
-                student.get
+                student.setStudent
             	student.setStudentName(rs.getString(2));
             	student.setStudentAddr(rs.getString(3));
             	student.setAge(rs.getString(4));
