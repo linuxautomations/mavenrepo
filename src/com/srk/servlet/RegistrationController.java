@@ -29,6 +29,8 @@ public class RegistrationController extends HttpServlet {
 		{
 			RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 			out.println("<font color=red>Please fill all the fields</font>");
+			out.println();
+
 			rd.include(request, response);
 		}
 		else
