@@ -64,7 +64,7 @@ public class StudentDAO {
             ps.setString(5,std.getQualification());  
             ps.setString(6,std.getPercentage());  
             ps.setString(7,std.getYearPassed());
-            ps.setInt(7, std.getStudentId());
+            ps.setInt(8, std.getStudentId());
               
             status=ps.executeUpdate();  
               
