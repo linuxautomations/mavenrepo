@@ -28,7 +28,7 @@ public class ViewStudents extends HttpServlet {
      out.print("<table border='1' width='100%'");  
      out.print("<tr><th>Student ID</th><th>StudentName</th><th>StudentGender</th><th>Student Addrs</th><th>Student Age</th><th>Student Qualification</th><th>Student Percentage</th><th>Student Year Passed</th><th>Edit</th><th>Delete</th></tr>");  
      for(Student student : list){  
-      out.print("<tr><td>"+student.getStudentId()+"</td><td>"+student.getStudentName()+"</td><td>"+"<tr><td>"+student.getStudentGender()+"</td><td>"+student.getStudentAddr()+"</td><td>"+student.getAge()+"</td><td>"+student.getQualification()+"</td><td>"+student.getPercentage()+"</td><td>"+student.getYearPassed()+"</td><td><a href='editStudent?stdId="+student.getStudentId()+"'>edit</a></td><td><a href='deleteStudent?stdId="+student.getStudentId()+"'>delete</a></td></tr>");  
+      out.print("<tr><td>"+student.getStudentId()+"</td><td>"+student.getStudentName()+"</td><td>"+student.getStudentGender()+"</td><td>"+student.getStudentAddr()+"</td><td>"+student.getAge()+"</td><td>"+student.getQualification()+"</td><td>"+student.getPercentage()+"</td><td>"+student.getYearPassed()+"</td><td><a href='editStudent?stdId="+student.getStudentId()+"'>edit</a></td><td><a href='deleteStudent?stdId="+student.getStudentId()+"'>delete</a></td></tr>");  
      }  
      out.print("</table>");  
        
